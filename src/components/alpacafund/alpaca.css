@@ -1,0 +1,13 @@
+.alpaca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+.alpaca-text {
+    height: fit-content;
+    font-size: 58px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+}

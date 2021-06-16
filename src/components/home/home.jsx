@@ -2,13 +2,21 @@ import React from 'react';
 import Preloader from "../preloader/preloader.jsx";
 import BigTiddieVoid from "../../images/void.jpg";
 
+import { useHistory } from 'react-router-dom';
+
 import "./home.css";
 
 const Home = () => {
+  let history = useHistory();
+
+  const goToAlpaca = () => {
+    history.push('/alpacafund');
+  }
+  
   return (
       <div className="App">
           <div className="container">
-          <img className="void-background" src={BigTiddieVoid} />
+          <img className="void-background" src={BigTiddieVoid} onClick={goToAlpaca}/>
               <h1>
                   Big Tiddie Network
                   <br />

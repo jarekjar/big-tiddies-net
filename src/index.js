@@ -3,6 +3,6 @@ import { render } from 'react-dom';
 
 import "./styles.css";
 
-import Home from './components/home/home.jsx';
+import Router from './components/router/router.jsx';
 
-render(<Home />, document.getElementById('root'));
+render(<Router />, document.getElementById('root'));
