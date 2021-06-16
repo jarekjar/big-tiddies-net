@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Preloader.css";
 
 const Preloader = () => {
-  //preloader function that changes the opacity on a timer  
+  //preloader function that changes the opacity on a timer
   const preloader = () => {
     let preload = document.querySelector(".preloader");
     setTimeout(() => {
