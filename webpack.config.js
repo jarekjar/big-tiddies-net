@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   output: {
@@ -40,12 +41,13 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './',
-    hot: true
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "static" }],
     }),
   ],
 };

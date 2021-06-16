@@ -11,9 +11,7 @@ const Router = () => {
         <Route
           exact
           path="/"
-          render={() => {
-            return <Redirect to="/home"></Redirect>;
-          }}
+          render={() => <Home />}
         ></Route>
         <Route path="/home">
           <Home />
